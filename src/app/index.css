@@ -1,0 +1,188 @@
+/* Основные стили */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  background-color: unset;
+  cursor: pointer;
+}
+
+button,
+input[type="submit"] {
+  border: 0;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--black);
+}
+
+html{
+  font-size: 0.625vw;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+  --black: #010f10;
+  --white: #ffffff;
+  --aqua: #5daeba;
+  --orange: #dca633;
+}
+
+.header{
+  font-size: 2rem;
+  background-color: var(--black);
+  padding: 2rem 10rem;
+  color: var(--orange);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__title{
+  color: var(--orange);
+  font-size: 6rem;
+}
+.header__icons{
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.header__icon svg{
+  width: 4rem;
+  height: 4rem;
+}
+.container{
+  margin-top: 5rem;
+  padding: 0 10rem;
+}
+.main-page{
+  display: flex;
+  padding: 0 10rem;
+}
+.main-page__icon{
+  width: 38.4rem;
+  height: 11.5rem;
+}
+
+.main-page__heading{
+  font-size: 3rem;
+  margin-top: 6rem;
+}
+
+.search-page{
+
+}
+
+.search-input{
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  width: 100%;
+  caret-color: var(--orange);
+  border: var(--orange) .2rem solid;
+
+  font-size: 2.4rem;
+}
+.search-input:focus{
+  outline: var(--orange) .3rem solid;
+}
+
+
+.films-wrapper{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.film-card{
+  width: 26rem;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+.film-card__poster{
+  width: 26rem;
+  height: 43em;
+  object-fit: cover;
+}
+.film-card__details{
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.film-card__title{
+  font-size: 3.6rem;
+  align-self: center;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  max-height: 13rem;
+}
+.film-card__year{
+  font-size: 3rem;
+}
+.film-card__row{
+  display: flex;
+  justify-content: space-between;
+}
+.film-card__like-icon svg{
+  width: 4rem;
+  height: 4rem;
+}
+
+.film-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.film-page__poster{
+  width: 30rem;
+  height: 49.4rem;
+  object-fit: cover;
+}
+.film-page__details{
+  display: flex;
+  flex-flow: column;
+  gap: 4rem;
+  width: 50rem;
+}
+.film-page__title{
+  font-size: 6rem;
+}
+
+.film-page__info{
+  font-size: 3rem;
+}
+
+.liked-page__heading{
+  font-size: 3rem;
+}
