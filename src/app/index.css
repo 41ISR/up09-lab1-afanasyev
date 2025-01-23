@@ -186,3 +186,22 @@ html{
 .liked-page__heading{
   font-size: 3rem;
 }
+
+.pagination{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 0.8rem;
+  margin-bottom: 2.4rem;
+}
+.pagination-page{
+  font-size: 4.8rem;
+}
+.pagination-btn svg{
+  width: 2.4rem;
+  height: 4.8rem;
+  cursor: pointer;
+}
+.pagination-btn.left svg{
+  transform: rotate(180deg);
+}

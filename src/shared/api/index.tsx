@@ -15,11 +15,12 @@ export const OMDBApi = {
     });
     return res.data;
   },
-  searchByText: async (text: string) => {
+  searchByText: async (text: string, page: number) => {
     const res = await OMDBInstance.get<{Search : IMovieRDO[]}>("", {
       params: {
         apikey: API_KEY,
         s: text,
+        page: page,
       },
     });
     return res.data.Search;

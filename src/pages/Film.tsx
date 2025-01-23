@@ -3,7 +3,6 @@ import { useParams } from "react-router";
 import { OMDBApi } from "../shared/api";
 import { IMovieRDO } from "../entities/movie/movie.rdo";
 import App from "../app/App";
-import LikeOutlined from "../shared/svg/LikeOutlined";
 
 const Film: React.FC = () => {
   let params = useParams();
